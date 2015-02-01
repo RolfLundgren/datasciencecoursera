@@ -26,8 +26,8 @@ best <- function(state, outcome) {
                 stop("invalid outcome")
         }
         
-        ## Return hospital name in that state with the lowest
-        ## 30-day death rate        
+        ## Returns hospital name in that state with the lowest
+        ## 30-day death rate by creating an index of ranks.       
         
         if (outcome == "heart attack") {
                 statedata[, 11] <- as.numeric(statedata[, 11])
